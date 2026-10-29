@@ -1,0 +1,1114 @@
+ELECTRIC VEHICLE MARKET ANALYSIS USING TABLEAU - ALL 21 TEMPLATES (COMBINED)
+Medi-Caps University, Indore | 26 October 2026
+
+CONTENTS
+  01_Brainstorm_and_Idea_Prioritization
+  02_Define_Problem_Statements
+  03_Empathy_Map_Canvas
+  04_Customer_Journey_Map
+  05_Solution_Requirements
+  06_Technology_Stack
+  07_Data_Flow_Diagram_and_User_Stories
+  08_Problem_Solution_Fit
+  09_Project_Proposal
+  10_Solution_Architecture
+  11_Project_Planning
+  12_Business_Question_and_Visualization_Report
+  13_Dashboard_Design
+  14_Story_Design
+  15_Performance_Testing
+  16_Final_Report
+  17_Communication
+  18_Demonstration_of_Proposed_Features
+  19_Project_Demo_Planning
+  20_Scalability_and_Future_Plan
+  21_Team_Involvement_in_Demonstration
+
+
+
+########################################################################
+# FILE: 01_Brainstorm_and_Idea_Prioritization.txt
+########################################################################
+
+================================================================
+IDEATION PHASE
+Brainstorm & Idea Prioritization Template
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 4 Marks
+================================================================
+
+Brainstorming provides a free and open environment that encourages
+creative thinking. As this was an individual project, the brainstorming
+was done by one student; ideas below are the options considered.
+[TO FILL: replace ideas 2-4 with the alternatives you really considered.]
+
+STEP 1: BRAINSTORM AND IDEA LISTING
++------+-------------+------------------------------------------+--------------------+-------+
+| S.No | Team Member | Idea / Suggestion                        | Category           | Group |
++------+-------------+------------------------------------------+--------------------+-------+
+| 1    | Abhay Singh | Analyse EV market data with interactive  | Data visualization | 1     |
+|      |             | Tableau dashboards                       |                    |       |
+| 2    | Abhay Singh | Present the analysis as a Tableau Story  | Data storytelling  | 1     |
+| 3    | Abhay Singh | Build a website to show the dashboards   | Web development    | 2     |
+|      |             | and story in one place                   |                    |       |
+| 4    | Abhay Singh | Host source code on GitHub and deploy on | Deployment         | 2     |
+|      |             | Render for a public link                 |                    |       |
++------+-------------+------------------------------------------+--------------------+-------+
+
+STEP 2: IDEA PRIORITIZATION
++-------+----------------------------------------------+-------------+------------+----------+----------+
+| Group | Final Idea                                   | Feasibility | Importance | Priority | Selected |
++-------+----------------------------------------------+-------------+------------+----------+----------+
+| 1     | EV market analysis using Tableau dashboards  | High        | High       | 1        | Yes      |
+|       | and a Tableau Story                          |             |            |          |          |
+| 2     | Website (HTML, CSS, JS) deployed via GitHub  | High        | Medium     | 2        | Yes      |
+|       | and Render to display the visualizations     |             |            |          |          |
+| 3     | [TO FILL - any other idea you rejected]      | [   ]       | [   ]      | 3        | No       |
++-------+----------------------------------------------+-------------+------------+----------+----------+
+
+Selected direction: Analyse the EV market dataset in Tableau, publish two
+dashboards and a story, and present them through a deployed website.
+
+
+########################################################################
+# FILE: 02_Define_Problem_Statements.txt
+########################################################################
+
+================================================================
+IDEATION PHASE
+Define the Problem Statements
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 2 Marks
+================================================================
+
+Customer Problem Statement:
+
++-----------+--------------------+-------------------+------------------------+--------------------------+-------------------------+
+| Problem   | I am (Customer)    | I'm trying to     | But                    | Because                  | Which makes me feel     |
+| Statement |                    |                   |                        |                          |                         |
++-----------+--------------------+-------------------+------------------------+--------------------------+-------------------------+
+| PS-1      | A student / analyst| Understand the    | I cannot easily see    | The data is a raw table  | Confused and overwhelmed|
+|           | interested in the  | electric vehicle  | patterns or compare    | with many attributes     | by the amount of data   |
+|           | EV market          | market from the   | vehicles and           | (e.g. sales, price,      |                         |
+|           |                    | dataset           | manufacturers          | battery, range, ratings) |                         |
++-----------+--------------------+-------------------+------------------------+--------------------------+-------------------------+
+| PS-2      | A person wanting   | View the analysis | The charts and story   | They are not available   | Frustrated and unsure   |
+|           | to review the      | easily from one   | are not available in   | together in one public   | where to find the       |
+|           | project results    | place, anywhere   | one accessible place   | web page                 | complete analysis       |
++-----------+--------------------+-------------------+------------------------+--------------------------+-------------------------+
+
+Note: attributes named above (sales, price, battery, range, ratings) are
+the areas listed in the project description. [Confirm against dataset.]
+
+
+########################################################################
+# FILE: 03_Empathy_Map_Canvas.txt
+########################################################################
+
+================================================================
+IDEATION PHASE
+Empathize & Discover - Empathy Map Canvas
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 4 Marks
+================================================================
+
+User persona: A student or analyst who wants to understand the EV market
+using data.   [Confirm / adjust the persona to your real target user.]
+
+                         +-------------------------------+
+                         |         USER'S GOAL           |
+                         | Understand EV market patterns |
+                         | quickly and clearly           |
+                         +-------------------------------+
+
++----------------------------------+----------------------------------+
+| SAYS                             | THINKS                           |
+| - "The data is too large to      | - "Will charts make this easier  |
+|    read row by row."             |    to understand?"               |
+| - "Which manufacturer or vehicle | - "Can I trust what the charts   |
+|    performs best?"               |    show?"                        |
+| - "Can I see this in one place?" | - "I need a simple comparison."  |
++----------------------------------+----------------------------------+
+| DOES                             | FEELS                            |
+| - Opens the dataset / dashboards | - Confused by raw tables         |
+| - Compares vehicles, prices,     | - Curious about EV trends        |
+|    battery and range             | - Satisfied when patterns are    |
+| - Uses filters and clicks charts |    clear                         |
+| - Follows the Tableau Story      |                                  |
++----------------------------------+----------------------------------+
+| PAINS                            | GAINS                            |
+| - Raw data is hard to interpret  | - Clear visual comparisons       |
+| - Hard to compare many attributes| - Interactive exploration        |
+| - No single place to see results | - A guided story of the analysis |
+|                                  | - One public website link        |
++----------------------------------+----------------------------------+
+
+Reference: https://www.mural.co/templates/empathy-map-canvas
+
+
+########################################################################
+# FILE: 04_Customer_Journey_Map.txt
+########################################################################
+
+================================================================
+REQUIREMENT ANALYSIS
+Customer Journey Map
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 2 Marks
+================================================================
+
++--------------+------------------------+------------------------+------------------------+
+| Phase        | Stage 1: Discover      | Stage 2: Explore       | Stage 3: Understand    |
++--------------+------------------------+------------------------+------------------------+
+| Actions      | - Opens the project    | - Opens Dashboard      | - Follows the Tableau  |
+|              |   website link         |   views                | Story scenes           |
+|              | - Reads the project    | - Clicks charts and    | - Reads the conclusion |
+|              |   introduction         |   uses filters         | - Notes key patterns   |
++--------------+------------------------+------------------------+------------------------+
+| Touchpoint   | - Website home page    | - Embedded / linked    | - Tableau Story        |
+|              | - Project objectives   |   Tableau dashboards   | - Website conclusion   |
+|              |   section              |                        |   section              |
++--------------+------------------------+------------------------+------------------------+
+| Customer     | "What does this        | "Which vehicles or     | "What do the patterns  |
+| Thought      | project show?"         | manufacturers stand    | mean overall?"         |
+|              |                        | out?"                  |                        |
++--------------+------------------------+------------------------+------------------------+
+| Customer     | Curious                | Engaged                | Satisfied / informed   |
+| Feeling      |                        |                        |                        |
++--------------+------------------------+------------------------+------------------------+
+| Process      | Student (website       | Student (Tableau       | Student (story and     |
+| Ownership    | design, deployment)    | dashboards)            | conclusion)            |
++--------------+------------------------+------------------------+------------------------+
+| Opportunities| - Clearer navigation   | - Add more filters     | - Add key-takeaway     |
+|              | - Project demo video   | - Add more charts      |   summary              |
+|              |   link on home page    |                        | - Add more EV data     |
++--------------+------------------------+------------------------+------------------------+
+
+
+########################################################################
+# FILE: 05_Solution_Requirements.txt
+########################################################################
+
+================================================================
+REQUIREMENT ANALYSIS (Project Design Phase-II)
+Solution Requirements (Functional & Non-functional)
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 4 Marks
+================================================================
+
+FUNCTIONAL REQUIREMENTS
++-----+--------------------------+-----------------------------------------------------------+----------+
+| FR  | Functional Requirement   | Sub Requirement (Story / Sub-Task)                        | Priority |
+| No. | (Epic)                   |                                                           |          |
++-----+--------------------------+-----------------------------------------------------------+----------+
+| 1   | Data Access &            | Use the EV market dataset provided for the assignment by  | High     |
+|     | Integration              | connecting it to Tableau as a data source. [Dataset file  |          |
+|     |                          | name/format: TO FILL]                                     |          |
++-----+--------------------------+-----------------------------------------------------------+----------+
+| 2   | Data Processing          | Inspect columns and data types and prepare fields for     | High     |
+|     |                          | visualization. [Actual cleaning steps performed: TO FILL  |          |
+|     |                          | - or "none required" if confirmed]                        |          |
++-----+--------------------------+-----------------------------------------------------------+----------+
+| 3   | Business Analysis        | Analyse EV indicators such as sales, prices, battery,     | High     |
+|     |                          | range and ratings using Tableau measures and aggregations.|          |
+|     |                          | [Calculated fields used: TO FILL]                         |          |
++-----+--------------------------+-----------------------------------------------------------+----------+
+| 4   | Business Insights &      | Provide Tableau worksheets, two dashboards and a Tableau  | High     |
+|     | Analytical Outputs       | Story published on Tableau Public.                        |          |
++-----+--------------------------+-----------------------------------------------------------+----------+
+| 5   | User Interaction &       | Allow users to click, filter, compare and explore the     | Medium   |
+|     | Analysis                 | dashboards. [Filters actually used: TO FILL]              |          |
++-----+--------------------------+-----------------------------------------------------------+----------+
+| 6   | Data Update & Reporting  | Present results through a public website (HTML, CSS, JS) | Medium   |
+|     |                          | hosted via GitHub and Render. The dataset is static; the  |          |
+|     |                          | site is updated by editing the files and pushing again.   |          |
++-----+--------------------------+-----------------------------------------------------------+----------+
+
+NON-FUNCTIONAL REQUIREMENTS
++--------+----------------+----------------------------------------------------------------------+
+| NFR No.| Requirement    | Description                                                          |
++--------+----------------+----------------------------------------------------------------------+
+| NFR-1  | Usability      | Simple navigation (Home, Dashboard, Story, Conclusion) and clear     |
+|        |                | titles so a first-time user can explore without training.            |
+| NFR-2  | Security       | The site is public and read-only with no login, forms or database;   |
+|        |                | no personal data is collected. Source code is in a public repo, so   |
+|        |                | no passwords or keys are stored in it.                               |
+| NFR-3  | Reliability    | Static pages are served by Render; Tableau views are served by       |
+|        |                | Tableau Public. The site depends on both being available.            |
+| NFR-4  | Performance    | Pages are lightweight (static HTML/CSS/JS). Chart loading speed      |
+|        |                | depends on Tableau Public. [Measured load time: TO FILL]             |
+| NFR-5  | Availability   | Available through a public URL in a browser. Free-tier hosting may   |
+|        |                | have start-up delay after inactivity. [Confirm plan used]            |
+| NFR-6  | Scalability    | Static hosting can serve many viewers; the dataset is fixed. Larger  |
+|        |                | datasets would need Tableau extracts or a data source upgrade.       |
++--------+----------------+----------------------------------------------------------------------+
+
+
+########################################################################
+# FILE: 06_Technology_Stack.txt
+########################################################################
+
+================================================================
+REQUIREMENT ANALYSIS (Project Design Phase-II)
+Technology Stack (Architecture & Stack)
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 2 Marks
+================================================================
+
++------+-------------------------+----------------------------+---------------------------------------------+
+| S.No | Component               | Technology                 | Justification / Purpose                     |
++------+-------------------------+----------------------------+---------------------------------------------+
+| 1    | Programming / Query     | HTML, CSS, JavaScript      | Build the website structure (HTML), style   |
+|      | Language                |                            | (CSS) and behaviour (JS). No Python/SQL was |
+|      |                         |                            | used in the project.  [Confirm]             |
+| 2    | Database / Data         | Not used (file-based data) | No database or warehouse. The dataset is a  |
+|      | Warehouse               | [Dataset file: CSV/Excel - | file connected directly to Tableau.         |
+|      |                         | TO FILL]                   |                                             |
+| 3    | Data Ingestion          | Tableau data connection    | Loads the dataset file into Tableau for     |
+|      |                         |                            | analysis.                                   |
+| 4    | Data Transformation &   | Tableau Desktop / Public   | Fields, aggregations and any calculated     |
+|      | Business Logic          | [Cleaning tool: TO FILL]   | fields are created inside Tableau.          |
+| 5    | Data Visualization /    | Tableau Public             | Worksheets, 2 dashboards and a Story;       |
+|      | Analytics               | (worksheets, dashboards,   | published online to give shareable links.   |
+|      |                         | story)                     |                                             |
+| 6    | Front-End / User        | Website (HTML/CSS/JS) with | Gives users one page to reach dashboards    |
+|      | Interface               | Tableau Public views       | and story. Hosted on Render (static site)   |
+|      |                         |                            | from a GitHub repository.                   |
++------+-------------------------+----------------------------+---------------------------------------------+
+
+Supporting tools: Visual Studio Code (editing), Git (version control),
+GitHub (source-code hosting), Render (deployment).
+No backend, database, API, machine-learning model or automated data
+pipeline is used in this project.
+
+
+########################################################################
+# FILE: 07_Data_Flow_Diagram_and_User_Stories.txt
+########################################################################
+
+================================================================
+REQUIREMENT ANALYSIS (Project Design Phase-II)
+Data Flow Diagram & User Stories
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 4 Marks
+================================================================
+
+DATA FLOW DIAGRAM (Level 0 and Level 1)
+
+Legend: ( ) External Entity   [n] Process   || || Data Store   --> Data Flow
+
+Level 0
+ (Student / Developer) --EV dataset--> [0 EV Market Analysis System]
+ [0 EV Market Analysis System] --Dashboards, Story, Website link--> (Viewer / Evaluator)
+
+Level 1
+ (Dataset Provider) --EV market dataset--> [1 Inspect & Prepare Data]
+ [1 Inspect & Prepare Data] --prepared fields--> || D1: Dataset file / Tableau data source ||
+ || D1 || --data--> [2 Analyse & Build Worksheets in Tableau]
+ [2] --charts--> [3 Build Dashboards 1 & 2 and Story]
+ [3] --publish--> || D2: Tableau Public (published views) ||
+ || D2 || --view links--> [4 Build Website (HTML/CSS/JS)]
+ [4] --source code--> || D3: GitHub repository ||
+ || D3 || --repository--> [5 Deploy on Render]
+ [5] --public URL--> (Viewer / Evaluator)
+ (Viewer / Evaluator) --opens link, clicks charts--> [5] / D2 --views--> (Viewer)
+
+USER STORIES
+Note: there is no registration or login in this project, so stories cover
+viewing and exploring.
++-----------+----------------+------+-------------------------------------------+------------------------------------------+----------+----------+
+| User Type | Epic           | USN  | User Story / Task                         | Acceptance Criteria                      | Priority | Release  |
++-----------+----------------+------+-------------------------------------------+------------------------------------------+----------+----------+
+| Viewer    | Website access | USN-1| As a viewer, I can open the website link  | The site loads and shows the project     | High     | Sprint-3 |
+| (Web user)|                |      | in a browser                              | introduction                             |          |          |
+|           |                | USN-2| As a viewer, I can read the objectives    | Objectives section is visible            | Medium   | Sprint-3 |
+|           | Dashboard      | USN-3| As a viewer, I can open Dashboard 1       | Tableau dashboard loads / opens          | High     | Sprint-2 |
+|           |                | USN-4| As a viewer, I can open Dashboard 2       | Dashboard 2 link opens                   | High     | Sprint-2 |
+|           |                | USN-5| As a viewer, I can click charts / filters | Charts respond to selection              | Medium   | Sprint-2 |
+|           | Story          | USN-6| As a viewer, I can follow the Tableau     | Story scenes can be viewed in sequence   | High     | Sprint-2 |
+|           |                |      | Story                                     |                                          |          |          |
+|           | Conclusion     | USN-7| As a viewer, I can read the conclusion    | Conclusion section is visible            | Medium   | Sprint-3 |
+| Student / | Analysis       | USN-8| As the developer, I can analyse the EV    | Worksheets are created in Tableau        | High     | Sprint-1 |
+| Developer |                |      | dataset in Tableau                        |                                          |          |          |
+|           | Deployment     | USN-9| As the developer, I can push code to      | Repository shows files; Render URL works | High     | Sprint-3 |
+|           |                |      | GitHub and deploy on Render               |                                          |          |          |
++-----------+----------------+------+-------------------------------------------+------------------------------------------+----------+----------+
+
+
+########################################################################
+# FILE: 08_Problem_Solution_Fit.txt
+########################################################################
+
+================================================================
+PROJECT DESIGN PHASE-I
+Problem - Solution Fit Template
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 2 Marks
+================================================================
+
+1. CUSTOMER SEGMENT(S)
+   Students, learners and analysts who want to understand the EV market
+   using data; evaluators reviewing the project.
+
+2. JOBS-TO-BE-DONE / PROBLEMS
+   Understand an EV dataset, compare vehicle attributes and find patterns
+   without reading raw rows.
+
+3. TRIGGERS
+   An assignment / need to analyse EV data; interest in the growing EV
+   market; seeing a visual dashboard that makes data easy to read.
+
+4. EMOTIONS: BEFORE / AFTER
+   Before: confused, overwhelmed by raw data.
+   After: clear, informed, confident about patterns.
+
+5. AVAILABLE SOLUTIONS
+   Reading the dataset in a spreadsheet or table. Pros: full detail.
+   Cons: hard to compare and find patterns quickly.
+
+6. CUSTOMER CONSTRAINTS
+   Limited time; no technical tools installed; needs a link that opens in
+   an ordinary browser; free tools only.
+
+7. BEHAVIOUR
+   Searches the web, opens links, clicks charts and filters, compares
+   values visually.
+
+8. CHANNELS OF BEHAVIOUR
+   8.1 ONLINE: opens the website, Tableau Public dashboards and story;
+       GitHub repository for source code.
+   8.2 OFFLINE: discusses results in class / presentations; printed
+       project report.
+
+9. PROBLEM ROOT CAUSE
+   EV data has many attributes (sales, price, battery, range, ratings),
+   so raw tables are hard to interpret and are not shown visually.
+
+10. YOUR SOLUTION
+   Interactive Tableau dashboards and a Tableau Story, collected on a
+   website deployed on Render, with source code on GitHub.
+
+
+########################################################################
+# FILE: 09_Project_Proposal.txt
+########################################################################
+
+================================================================
+PROJECT INITIALIZATION AND PLANNING PHASE
+Project Proposal (Proposed Solution)
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 3 Marks
+================================================================
+
+PROJECT OVERVIEW
+Objective : To analyse the electric vehicle (EV) market dataset and present
+            the information through Tableau visualizations, two dashboards
+            and a Tableau Story, shown together on a deployed website.
+Scope     : Data inspection, analysis and visualization in Tableau; website
+            development (HTML, CSS, JavaScript); version control with Git
+            and GitHub; deployment on Render. Excludes backend, database,
+            API, machine learning and automated data pipelines.
+
+PROBLEM STATEMENT
+Description : The EV market data contains many attributes (e.g. sales,
+              price, battery, range, ratings), which are hard to interpret
+              in raw form.
+Impact      : Visual dashboards let users compare vehicles, recognise
+              patterns and understand the market faster, and a public
+              website makes the analysis easy to share.
+
+PROPOSED SOLUTION
+Approach     : (1) Understand the problem, (2) collect and inspect the
+               dataset, (3) preprocess if needed, (4) analyse in Tableau,
+               (5) create two dashboards, (6) create a Tableau Story,
+               (7) build the website, (8) push to GitHub with Git,
+               (9) deploy on Render, (10) test the published site.
+Key Features : Interactive Tableau dashboards; Tableau Story presenting
+               the analysis in sequence; single public website; source
+               code on GitHub; deployment through Render.
+
+RESOURCE REQUIREMENTS
++---------------+-----------------------+------------------------------------------+
+| Resource Type | Description           | Specification / Allocation               |
++---------------+-----------------------+------------------------------------------+
+| HARDWARE                                                                         |
+| Computing     | CPU/GPU               | Personal laptop/PC [CPU model: TO FILL]  |
+| Memory        | RAM                   | [TO FILL] GB                             |
+| Storage       | Disk space            | [TO FILL] (small project files)          |
+| SOFTWARE                                                                         |
+| Frameworks    | Web frameworks        | None (plain HTML, CSS, JavaScript)       |
+| Libraries     | Additional libraries  | None used for analysis [confirm]         |
+| Development   | IDE, version control  | Visual Studio Code, Git, GitHub,         |
+| Environment   |                       | Tableau (Public/Desktop), Render         |
+| DATA                                                                             |
+| Data          | Source, size, format  | EV market dataset provided for the       |
+|               |                       | assignment. [File name, size (rows x     |
+|               |                       | columns), format: TO FILL]               |
++---------------+-----------------------+------------------------------------------+
+
+
+########################################################################
+# FILE: 10_Solution_Architecture.txt
+########################################################################
+
+================================================================
+PROJECT DESIGN PHASE-I
+Solution Architecture
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 4 Marks
+================================================================
+
+Solution architecture bridges the business problem (hard-to-read EV data)
+and the technology solution (Tableau + website).
+
+ARCHITECTURE DIAGRAM
+
+ +------------------+   +--------------------+   +------------------------+
+ | EV Market        |-->| Tableau            |-->| Worksheets             |
+ | Dataset (file)   |   | (data connection)  |   | Dashboard 1, Dashboard 2|
+ +------------------+   +--------------------+   | Tableau Story           |
+                                                  +-----------+------------+
+                                                              | Publish
+                                                              v
+                                                  +------------------------+
+                                                  | Tableau Public         |
+                                                  | (published views/links)|
+                                                  +-----------+------------+
+                                                              | Links / embeds
+                                                              v
+ +------------------+   +--------------------+   +------------------------+
+ | VS Code          |-->| Git (local repo)   |-->| GitHub (public repo)   |
+ | index.html       |   | add, commit, push  |   | source-code hosting    |
+ | style.css        |   +--------------------+   +-----------+------------+
+ | script.js        |                                        | Connected
+ +------------------+                                        v
+                                                  +------------------------+
+                                                  | Render (static site)   |
+                                                  | public website URL     |
+                                                  +-----------+------------+
+                                                              v
+                                                       Viewer / Evaluator
+                                                       (web browser)
+
+Live website : https://tableau-website.onrender.com
+GitHub       : https://github.com/Aditipanwar0911/Ev-MArket-Analysis
+
+COMPONENT DESCRIPTION TABLE
++------------------------+--------------------------------------------------+---------------------------+
+| Component Name         | Description / Role in Architecture               | Technology Used           |
++------------------------+--------------------------------------------------+---------------------------+
+| EV Market Dataset      | Source data analysed in the project              | [CSV/Excel - TO FILL]     |
+| Data Analysis Layer    | Connects to data; builds charts and calculations | Tableau                   |
+| Dashboards (1 and 2)   | Interactive collections of charts                | Tableau Public            |
+| Tableau Story          | Sequence of scenes presenting the analysis       | Tableau Public            |
+| Website (front end)    | Introduction, objectives, dashboards, story,     | HTML, CSS, JavaScript     |
+|                        | conclusion                                       |                           |
+| Version Control        | Tracks file changes; stage, commit, push         | Git                       |
+| Code Repository        | Hosts source code publicly                       | GitHub                    |
+| Deployment Platform    | Serves the website as a static site online       | Render                    |
+| Development Tool       | Editing and terminal use                         | Visual Studio Code        |
++------------------------+--------------------------------------------------+---------------------------+
+
+No backend server, database, API or machine-learning component exists.
+
+
+########################################################################
+# FILE: 11_Project_Planning.txt
+########################################################################
+
+================================================================
+PROJECT PLANNING PHASE
+Project Planning Template (Product Backlog, Sprint Planning, Stories, Story Points)
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 8 Marks
+================================================================
+
+IMPORTANT: Sprint dates, story points and completion figures were not
+supplied. Story points below are proposed estimates and dates are blank.
+[TO FILL / CONFIRM before submission.]
+
+PRODUCT BACKLOG, SPRINT SCHEDULE AND ESTIMATION (4 Marks)
++----------+------------------+-------+--------------------------------------------+--------+----------+-------------+
+| Sprint   | Epic             | USN   | User Story / Task                          | Story  | Priority | Team Member |
+|          |                  |       |                                            | Points |          |             |
++----------+------------------+-------+--------------------------------------------+--------+----------+-------------+
+| Sprint-1 | Data Analysis    | USN-8 | Inspect dataset, prepare fields, analyse   | 5      | High     | Abhay Singh |
+|          |                  |       | data in Tableau                            |        |          |             |
+| Sprint-2 | Dashboard        | USN-3 | Create and publish Dashboard 1             | 4      | High     | Abhay Singh |
+| Sprint-2 | Dashboard        | USN-4 | Create and publish Dashboard 2             | 4      | High     | Abhay Singh |
+| Sprint-2 | Story            | USN-6 | Create and publish Tableau Story           | 3      | High     | Abhay Singh |
+| Sprint-3 | Website          | USN-1 | Build website (HTML, CSS, JS)              | 4      | High     | Abhay Singh |
+| Sprint-3 | Deployment       | USN-9 | Git commit/push to GitHub; deploy Render   | 3      | High     | Abhay Singh |
+| Sprint-4 | Testing & Report | -     | Test site and links; complete documents    | 2      | Medium   | Abhay Singh |
++----------+------------------+-------+--------------------------------------------+--------+----------+-------------+
+
+PROJECT TRACKER, VELOCITY & BURNDOWN CHART (4 Marks)
++----------+--------------+----------+-------------+--------------+------------------+---------------+
+| Sprint   | Total Story  | Duration | Sprint Start| Planned End  | Points Completed | Actual Release|
+|          | Points       |          | Date        | Date         |                  | Date          |
++----------+--------------+----------+-------------+--------------+------------------+---------------+
+| Sprint-1 | 5            | [TO FILL]| [TO FILL]   | [TO FILL]    | [TO FILL]        | [TO FILL]     |
+| Sprint-2 | 11           | [TO FILL]| [TO FILL]   | [TO FILL]    | [TO FILL]        | [TO FILL]     |
+| Sprint-3 | 7            | [TO FILL]| [TO FILL]   | [TO FILL]    | [TO FILL]        | [TO FILL]     |
+| Sprint-4 | 2            | [TO FILL]| [TO FILL]   | [TO FILL]    | [TO FILL]        | [TO FILL]     |
++----------+--------------+----------+-------------+--------------+------------------+---------------+
+Total story points planned: 25
+
+VELOCITY
+Average velocity (points per day) = Story points completed / Sprint
+duration in days. Total planned points = 25.
+Average velocity = 25 / [total project days - TO FILL] points per day.
+
+BURNDOWN CHART
+A burndown chart plots remaining story points against time. Start at 25
+points and reduce as each sprint finishes. [Insert chart after real
+sprint dates and completed points are confirmed.]
+
+ Points
+  25 |*
+     |   *
+  14 |      *
+     |          *
+   2 |              *
+   0 +--------------------- Sprint-1  2  3  4
+(Ideal plan only: 25 -> 20 -> 9 -> 2 -> 0. Not actual progress.)
+
+
+########################################################################
+# FILE: 12_Business_Question_and_Visualization_Report.txt
+########################################################################
+
+================================================================
+PROJECT DEVELOPMENT PHASE - TABLEAU
+Business Question and Visualization Report
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 5 Marks
+================================================================
+
+Minimum 8 business questions and visualizations are required. The
+questions below follow the analysis areas of the project (sales,
+manufacturers, price, battery, range, ratings, CO2 benefits).
+[Confirm each question matches a real worksheet; fill the chart type and
+insert the screenshot. No values are stated because none were verified.]
+
+1. Which manufacturers have the highest EV sales?
+   Visualization: [e.g. Bar chart - sales by manufacturer - CONFIRM]
+   Screenshot of visualization: [INSERT SCREENSHOT 1]
+
+2. How do average vehicle prices vary across manufacturers or categories?
+   Visualization: [CONFIRM chart type]
+   Screenshot of visualization: [INSERT SCREENSHOT 2]
+
+3. How do battery capacity and driving range compare across vehicles?
+   Visualization: [e.g. Scatter plot - CONFIRM]
+   Screenshot of visualization: [INSERT SCREENSHOT 3]
+
+4. Which battery technologies are used, and how common is each?
+   Visualization: [CONFIRM chart type]
+   Screenshot of visualization: [INSERT SCREENSHOT 4]
+
+5. How do customer ratings vary across manufacturers or vehicle categories?
+   Visualization: [CONFIRM chart type]
+   Screenshot of visualization: [INSERT SCREENSHOT 5]
+
+6. How are EVs distributed across vehicle categories?
+   Visualization: [CONFIRM chart type]
+   Screenshot of visualization: [INSERT SCREENSHOT 6]
+
+7. What are the estimated environmental (CO2 saving) benefits across
+   EV categories?   (only if the dataset contains this field)
+   Visualization: [CONFIRM chart type]
+   Screenshot of visualization: [INSERT SCREENSHOT 7]
+
+8. How do market indicators change over time or across other
+   dimensions in the dataset?   [Replace with your real 8th worksheet]
+   Visualization: [CONFIRM chart type]
+   Screenshot of visualization: [INSERT SCREENSHOT 8]
+
+
+########################################################################
+# FILE: 13_Dashboard_Design.txt
+########################################################################
+
+================================================================
+PROJECT DEVELOPMENT PHASE - TABLEAU
+Dashboard Design
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 5 Marks
+================================================================
+
+Activity 1: Interactive and visually appealing dashboards
+
+Two Tableau dashboards were developed to present the EV market analysis.
+Design points followed: clear and intuitive layout, suitable chart types,
+consistent colour and theming, interactive filters/selection, and a
+simple design that works within a website.
+
+Dashboard 1 - EV Market Overview
+Dashboard 2 - [Title: TO FILL]
+
+Major outcomes (bullet points):
+- [OUTCOME 1: describe a real headline figure or ranking from Dashboard 1,
+   taken from the screenshot - TO FILL]
+- [OUTCOME 2: TO FILL]
+- [OUTCOME 3: TO FILL]
+- [OUTCOME 4: TO FILL]
+- [OUTCOME 5: TO FILL]
+No numbers are written here because the dashboard values have not been
+verified. Insert the dashboard screenshot: [INSERT DASHBOARD SCREENSHOT]
+
+Activity 2: Tableau Public links
+
+Dashboard 1:
+https://public.tableau.com/views/DASHBOARD1_17931581279340/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+Dashboard 2:
+https://public.tableau.com/views/DASHBOARD1_17931581279340/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+(Note: this is the same link as Dashboard 1, as requested. If Dashboard 2
+is a separate published view, replace with its own link.)
+
+
+########################################################################
+# FILE: 14_Story_Design.txt
+########################################################################
+
+================================================================
+PROJECT DEVELOPMENT PHASE - TABLEAU
+Story Design
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 5 Marks
+================================================================
+
+A Tableau Story arranges visualizations and text in a sequence of scenes
+so that the analysis is presented in a logical order, like a slideshow
+within Tableau.
+
+Story scenes (the project description mentions market, vehicle
+performance, customer trends and environmental benefits):
+Scene 1: [TITLE - TO FILL]
+Scene 2: [TITLE - TO FILL]
+Scene 3: [TITLE - TO FILL]
+Scene 4: [TITLE - TO FILL]
+[INSERT STORY SCREENSHOTS]
+
+Observations (bullet points):
+- [OBSERVATION 1: from Scene 1 - TO FILL with real finding]
+- [OBSERVATION 2: TO FILL]
+- [OBSERVATION 3: TO FILL]
+- [OBSERVATION 4: TO FILL]
+
+Activity 2: Tableau Public Story link
+https://public.tableau.com/views/STORY1_17931582598010/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+
+########################################################################
+# FILE: 15_Performance_Testing.txt
+########################################################################
+
+================================================================
+PROJECT DEVELOPMENT PHASE
+Performance Test (Tableau)
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : [not stated on template]
+================================================================
+
++-------+-------------------------+--------------------------------------------------------------+
+| S.No. | Parameter               | Screenshot / Values                                          |
++-------+-------------------------+--------------------------------------------------------------+
+| 1     | Data Rendered           | EV market dataset connected to Tableau. [Rows x columns,     |
+|       |                         | fields used: TO FILL] [INSERT DATA SOURCE SCREENSHOT]        |
+| 2     | Data Preprocessing      | [TO FILL: cleaning actually done, or "dataset inspected and  |
+|       |                         | used as provided" if confirmed]                              |
+| 3     | Utilization of Filters  | [List filters and where used - TO FILL] [INSERT SCREENSHOT]  |
+| 4     | Calculation Fields Used | [Names and formulas - TO FILL, or "None"] [INSERT SCREENSHOT]|
+| 5     | Dashboard Design        | No of Visualizations / Graphs - [TO FILL: Dashboard 1 = ?,   |
+|       |                         | Dashboard 2 = ?] [INSERT SCREENSHOT]                         |
+| 6     | Story Design            | No of Visualizations / Graphs - [TO FILL: per scene]         |
+|       |                         | [INSERT SCREENSHOT]                                          |
++-------+-------------------------+--------------------------------------------------------------+
+
+Website check (to be confirmed by you after testing):
+Live site: https://tableau-website.onrender.com   Loaded in browser: [Yes/No]
+Tableau views open: [Yes/No]   Browsers/devices tested: [TO FILL]
+
+
+########################################################################
+# FILE: 16_Final_Report.txt
+########################################################################
+
+================================================================
+PROJECT DOCUMENTATION
+Final Project Report
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : -
+================================================================
+
+1. INTRODUCTION
+1.1 Project Overview
+This project analyses electric vehicle (EV) market data using Tableau.
+The information is presented through worksheets, two interactive
+dashboards and a Tableau Story. A website built with HTML, CSS and
+JavaScript brings the dashboards and story together, its source code is
+hosted on GitHub, and it is deployed on Render.
+
+1.2 Purpose
+Raw EV data contains many attributes and is hard to interpret. The
+purpose is to make comparisons and patterns easy to understand through
+visualization, and to share the work through a public website.
+
+2. IDEATION PHASE
+2.1 Problem Statement: see File 02 (PS-1: user cannot easily see patterns
+    in raw EV data; PS-2: results are not available in one place).
+2.2 Empathy Map Canvas: see File 03 (persona, says/thinks/does/feels,
+    pains and gains).
+2.3 Brainstorming: see File 01 (selected idea: Tableau analysis + website).
+
+3. REQUIREMENT ANALYSIS
+3.1 Customer Journey Map: see File 04 (Discover, Explore, Understand).
+3.2 Solution Requirement: see File 05 (6 functional and 6 non-functional).
+3.3 Data Flow Diagram: see File 07 (dataset -> Tableau -> dashboards and
+    story -> website -> GitHub -> Render -> viewer).
+3.4 Technology Stack: see File 06 (Tableau, HTML, CSS, JavaScript, VS Code,
+    Git, GitHub, Render; no database or backend).
+
+4. PROJECT DESIGN
+4.1 Problem Solution Fit: see File 08.
+4.2 Proposed Solution: see File 09.
+4.3 Solution Architecture: see File 10 (insert the architecture diagram).
+
+5. PROJECT PLANNING & SCHEDULING
+5.1 Project Planning: see File 11 (backlog, sprints, velocity, burndown;
+    dates to be completed).
+
+6. FUNCTIONAL AND PERFORMANCE TESTING
+6.1 Performance Testing: see File 15. Functional checks on the deployed
+    site: [TO FILL - layout, navigation, link opening, embedded Tableau
+    views; state real observations only].
+
+7. RESULTS
+7.1 Output Screenshots: [INSERT: Dashboard 1, Dashboard 2, each Story
+    scene, website home page, GitHub repository, Render deployment page].
+    Key findings: [TO FILL from actual dashboards - none stated here
+    because values are not verified].
+
+8. ADVANTAGES & DISADVANTAGES
+Advantages:
+- Visual presentation makes the data easier to understand.
+- Interactive dashboards allow exploration.
+- Story presents the analysis in a logical sequence.
+- Public website link is easy to share; source is version-controlled.
+- Uses free tools (Tableau Public, GitHub, Render).
+Disadvantages:
+- Static dataset; no live data updates.
+- Depends on Tableau Public and Render availability.
+- No user accounts, database or backend.
+- Free hosting may start slowly after inactivity [confirm plan].
+- Tableau Public data and views are public.
+
+9. CONCLUSION
+The project shows how Tableau can turn EV market data into dashboards and
+a story that are easier to interpret than raw tables. Combining them in a
+website, with Git/GitHub for version control and Render for deployment,
+provides a complete practical workflow from data to a public link.
+[Add 2-3 sentences on actual findings once confirmed.]
+
+10. FUTURE SCOPE
+- Add newer EV data and more filters.
+- Add manufacturer and regional comparisons.
+- Add charging infrastructure, adoption and environmental-impact views.
+- Improve website design and add a project summary section.
+
+11. APPENDIX
+Source Code      : index.html, style.css, script.js (in GitHub repository)
+Dataset Link     : [TO FILL - dataset file name/link]
+GitHub           : https://github.com/Aditipanwar0911/Ev-MArket-Analysis
+Project Website  : https://tableau-website.onrender.com
+Dashboard 1      : https://public.tableau.com/views/DASHBOARD1_17931581279340/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+Dashboard 2      : https://public.tableau.com/views/DASHBOARD1_17931581279340/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+Tableau Story    : https://public.tableau.com/views/STORY1_17931582598010/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+Demo Video       : https://drive.google.com/file/d/1Uz5pwepNkbHbPMyvblzeD8V1NoEJmClo/view?usp=drivesdk
+                   (taken from your GitHub README - confirm it is correct)
+
+
+########################################################################
+# FILE: 17_Communication.txt
+########################################################################
+
+================================================================
+PROJECT DEMONSTRATION
+Communication
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 1 Mark
+================================================================
+
+Communication Plan (solo project; communication was with the faculty /
+evaluator and self-tracking).  [Confirm channels actually used.]
++------+------------------------+-----------+-----------------+-----------------+-------------------------------+
+| S.No | Communication Type     | Frequency | Channel / Tool  | Participants    | Purpose                       |
++------+------------------------+-----------+-----------------+-----------------+-------------------------------+
+| 1    | Team Standup (self     | Daily     | Personal notes  | Abhay Singh     | Plan the day's tasks          |
+|      | check-in)              |           |                 |                 |                               |
+| 2    | Progress Update        | Weekly    | [TO FILL]       | Student, guide  | Report progress               |
+| 3    | Issue / Bug Discussion | As Needed | [TO FILL]       | Student, guide  | Resolve problems              |
+| 4    | Stakeholder Review     | Bi-Weekly | [TO FILL]       | Student, guide  | Review work                   |
+| 5    | Final Demo Rehearsal   | Once      | Laptop / browser| Abhay Singh     | Practise the demo             |
+| 6    | [TO FILL]              |           |                 |                 |                               |
++------+------------------------+-----------+-----------------+-----------------+-------------------------------+
+
+Communication Challenges & Resolutions
++------+--------------------------------------------+-------------------------------------------------+
+| S.No | Challenge Faced                            | Resolution / Action Taken                       |
++------+--------------------------------------------+-------------------------------------------------+
+| 1    | Terminal reported Git was not recognized   | Installed Git and configured author information |
+| 2    | [TO FILL - e.g. embedding Tableau views]   | [TO FILL]                                       |
+| 3    | [TO FILL]                                  | [TO FILL]                                       |
++------+--------------------------------------------+-------------------------------------------------+
+
+
+########################################################################
+# FILE: 18_Demonstration_of_Proposed_Features.txt
+########################################################################
+
+================================================================
+PROJECT DEMONSTRATION
+Demonstration of Proposed Features
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 1 Mark
+================================================================
+
+Status values: Implemented / Partial / Pending.   [Confirm each status.]
++------+------------------------+--------------------------------------+-------------+--------------+---------+
+| S.No | Feature Name           | Description                          | Status      | Demonstrated | Remarks |
++------+------------------------+--------------------------------------+-------------+--------------+---------+
+| 1    | Data analysis          | EV dataset analysed in Tableau       | Implemented | Yes          |         |
+| 2    | Dashboard 1            | Published interactive dashboard      | Implemented | Yes          |         |
+| 3    | Dashboard 2            | Second dashboard                     | [CONFIRM]   | [CONFIRM]    | Same link|
+|      |                        |                                      |             |              | as Dash 1|
+| 4    | Tableau Story          | Published story of the analysis      | Implemented | Yes          |         |
+| 5    | Website                | HTML/CSS/JS site showing the work    | Implemented | Yes          |         |
+| 6    | GitHub + Render        | Code on GitHub; site deployed on     | Implemented | Yes          |         |
+|      | deployment             | Render with public URL               |             |              |         |
++------+------------------------+--------------------------------------+-------------+--------------+---------+
+
+Feature Implementation Summary
+Total Features Proposed      : 6
+Total Features Implemented   : 5 confirmed + 1 to confirm (Dashboard 2)
+Total Features Demonstrated  : [TO FILL after demo]
+Overall Implementation Rate  : [5/6 = 83% if Dashboard 2 is unconfirmed;
+                               6/6 = 100% if confirmed]
+
+
+########################################################################
+# FILE: 19_Project_Demo_Planning.txt
+########################################################################
+
+================================================================
+PROJECT DEMONSTRATION
+Project Demo Planning
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 1 Mark
+================================================================
+
+Durations are planning suggestions; adjust to your actual slot.
++------+----------------------------+-----------------------------------------------+---------------+-------------+
+| S.No | Demo Section               | Description                                   | Duration(min) | Responsible |
++------+----------------------------+-----------------------------------------------+---------------+-------------+
+| 1    | Introduction               | Title, student, university                    | 1             | Abhay Singh |
+| 2    | Problem Statement          | Why raw EV data is hard to understand         | 1             | Abhay Singh |
+| 3    | Tableau Dashboards         | Show Dashboard 1 and Dashboard 2              | 3             | Abhay Singh |
+| 4    | Tableau Story              | Walk through the story scenes                 | 2             | Abhay Singh |
+| 5    | Website, GitHub, Render    | Show live site, repository and deployment     | 2             | Abhay Singh |
+| 6    | Conclusion and Q&A         | Findings, limitations, future scope           | 1             | Abhay Singh |
++------+----------------------------+-----------------------------------------------+---------------+-------------+
+
+Demo Flow Summary
++------+------------------------------------+---------------------------------------------+
+| Step | Activity                           | Notes                                       |
++------+------------------------------------+---------------------------------------------+
+| 1    | Introduction & Problem Statement   | State the problem and project objective     |
+| 2    | Solution Overview                  | Tableau analysis -> website -> deployment   |
+| 3    | Live Feature Demonstration         | Open live site; dashboards; story           |
+| 4    | Q&A Session                        | Answer questions                            |
++------+------------------------------------+---------------------------------------------+
+
+
+########################################################################
+# FILE: 20_Scalability_and_Future_Plan.txt
+########################################################################
+
+================================================================
+PROJECT DEMONSTRATION
+Scalability & Future Plan
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 1 Mark
+================================================================
+
+Current System Limitations
++------+--------------------------------------------+-----------------------------------------+----------+
+| S.No | Limitation                                 | Impact                                  | Priority |
++------+--------------------------------------------+-----------------------------------------+----------+
+| 1    | Static dataset; no live data               | Results can become outdated             | High     |
+| 2    | Depends on Tableau Public and Render       | Site/charts unavailable if either is    | Medium   |
+|      |                                            | down                                    |          |
+| 3    | No backend, database or user accounts      | No saved preferences or data entry      | Low      |
++------+--------------------------------------------+-----------------------------------------+----------+
+
+Scalability Plan
++------+------------------+--------------------------------------+----------------------------------------+
+| S.No | Aspect           | Current State                        | Proposed Upgrade / Solution            |
++------+------------------+--------------------------------------+----------------------------------------+
+| 1    | User Load        | Static site on Render                | Higher hosting plan or CDN if traffic  |
+|      |                  |                                      | grows                                  |
+| 2    | Data Storage     | Dataset file used in Tableau         | Database/warehouse for larger data     |
+| 3    | Performance      | Light pages; depends on Tableau load | Use Tableau extracts and fewer charts  |
+|      |                  |                                      | per dashboard                          |
+| 4    | Security         | Public read-only site; no login      | Add authentication only if private data|
+|      |                  |                                      | is introduced                          |
++------+------------------+--------------------------------------+----------------------------------------+
+
+Future Roadmap
++---------+--------------------------------------------------+------------------+------------------------------+
+| Phase   | Planned Feature / Enhancement                    | Target Timeline  | Expected Impact              |
++---------+--------------------------------------------------+------------------+------------------------------+
+| Phase 2 | Add more recent EV data and more filters         | [TO FILL]        | More current and flexible    |
+| Phase 3 | Manufacturer/regional comparisons, charging      | [TO FILL]        | Deeper market insight        |
+|         | infrastructure and adoption views                |                  |                              |
+| Phase 4 | Environmental-impact detail and improved site    | [TO FILL]        | Better usability and insight |
+|         | design                                           |                  |                              |
++---------+--------------------------------------------------+------------------+------------------------------+
+
+
+########################################################################
+# FILE: 21_Team_Involvement_in_Demonstration.txt
+########################################################################
+
+================================================================
+PROJECT DEMONSTRATION
+Team Involvement in Demonstration
+================================================================
+Date          : 26 October 2026
+Team ID       : [TO FILL - not provided]
+Project Name  : Electric Vehicle Market Analysis Using Tableau
+Student       : Abhay Singh (solo project)  [confirm name]
+University    : Medi-Caps University, Indore, Madhya Pradesh, India
+Maximum Marks : 1 Mark
+================================================================
+
+This was an individual project; one member performed all roles.
++------+-------------+---------------------+---------------------------+-----------------------------+---------------+
+| S.No | Team Member | Role in Demo        | Section Presented         | Contribution Summary        | Participation |
++------+-------------+---------------------+---------------------------+-----------------------------+---------------+
+| 1    | Abhay Singh | Presenter, analyst, | All sections (see File 19)| Tableau analysis, dashboards| Active        |
+|      |             | developer           |                           | and story; website; Git,    |               |
+|      |             |                     |                           | GitHub; Render deployment   |               |
++------+-------------+---------------------+---------------------------+-----------------------------+---------------+
+
+Team Coordination Notes
++-----------------------------------------+------------------------------------------+
+| Aspect                                  | Details                                  |
++-----------------------------------------+------------------------------------------+
+| Team Leader / Coordinator               | Abhay Singh (individual project)         |
+| Overall Team Coordination Rating (1-5)  | Not applicable (single member)           |
+| Any issues during demo                  | [TO FILL after demo - or "None"]         |
+| How issues were resolved                | [TO FILL - or "Not applicable"]          |
++-----------------------------------------+------------------------------------------+
